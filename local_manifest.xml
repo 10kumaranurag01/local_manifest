@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
         
         <!-- fetching sources -->      
@@ -7,34 +5,34 @@
         <remote name="10kumaranurag01"
                 fetch="https://github.com/10kumaranurag01" />
 
-         <remote name="10kumaranurag01"
-                fetch="https://github.com/10kumaranurag01" />
+         <remote name="r450784d"
+                fetch="https://gitlab.com/rintokhan" />
 
 
 <!-- device trees -->
 
-        <project path="device/realme/RMX2020" name="android_device_realme_RMX2020" remote="Rinto02" revision="arrow-13.0" />
-        <project path="vendor/realme/RMX2020" name="android_vendor_realme_RMX2020" remote="Rinto02" revision="arrow-13.0" />
-        <project path="vendor/realme/RMX2020-ims" name="android_vendor_realme_RMX2020-ims" remote="Rinto02" revision="arrow-13.0" />
-        <project path="kernel/realme/RMX2020" name="android_kernel_realme_RMX2020" remote="Rinto02" revision="arrow-13.0" clone-depth="1" />
-        <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="Rinto02" revision="arrow-13.0" />
+        <project path="device/realme/RMX2020" name="android_device_realme_RMX2020" remote="10kumaranurag01" revision="arrow-13.0" />
+        <project path="vendor/realme/RMX2020" name="android_vendor_realme_RMX2020" remote="10kumaranurag01" revision="arrow-13.0" />
+        <project path="vendor/realme/RMX2020-ims" name="android_vendor_realme_RMX2020-ims" remote="10kumaranurag01" revision="arrow-13.0" />
+        <project path="kernel/realme/RMX2020" name="android_kernel_realme_RMX2020" remote="10kumaranurag01" revision="arrow-13.0" clone-depth="1" />
+        <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="10kumaranurag01" revision="arrow-13.0" />
 
 <!-- clang -->
-        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="Rinto02" revision="main" clone-depth="1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="10kumaranurag01" revision="main" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="r450784d" revision="master" clone-depth="1" />
 
 <!-- Replacement -->
 
         <remove-project name="android_frameworks_base" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="Rinto02" revision="tiramisu" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="10kumaranurag01" revision="tiramisu" />
 
         <remove-project name="android_frameworks_native" />
-        <project path="frameworks/native" name="android_frameworks_native" remote="Rinto02" revision="tiramisu" />
+        <project path="frameworks/native" name="android_frameworks_native" remote="10kumaranurag01" revision="tiramisu" />
         
         <remove-project name="android_frameworks_av" />
-        <project path="frameworks/av" name="android_frameworks_av" remote="Rinto02" revision="tiramisu" />
+        <project path="frameworks/av" name="android_frameworks_av" remote="10kumaranurag01" revision="tiramisu" />
 
         <remove-project name="android_packages_modules_Wifi" />
-        <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="Rinto02" revision="tiramisu" />
+        <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="10kumaranurag01" revision="tiramisu" />
   
      </manifest>
